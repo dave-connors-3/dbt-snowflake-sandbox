@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_uuid_data
+    columns:
+      - name: surrogate_key
+        tests: 
+          - unique
+          - not_null
+      - name: surrogate_key_int
+        tests: 
+          - unique
+          - not_null
