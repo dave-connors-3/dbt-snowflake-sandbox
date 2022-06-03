@@ -34,6 +34,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dave_snowflake_sandbox:
     +database: analytics
+    surrogate_key_test:
+      +materialized: table
+      +sql_header: alter session set USE_CACHED_RESULT = False;
 
 seeds:
   dave_snowflake_sandbox:
