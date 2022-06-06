@@ -1,0 +1,1 @@
+select * from {{ ref('stg_uuid_data') }} where source_name = 'source1'
