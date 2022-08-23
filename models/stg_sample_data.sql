@@ -1,3 +1,7 @@
-select * from {{ ref('sample_data') }}
+select 
+    id as sample_id, 
+    type as observation_type,
+    value as observed_value,
+    date as observation_date
 
-where id = 1
+from {{ ref('sample_data') }}

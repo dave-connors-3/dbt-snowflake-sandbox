@@ -1,0 +1,20 @@
+version: 2
+
+metrics:
+  - name: average_observed_value
+    label: Average Observed Value
+    model: ref('stg_sample_data')
+    
+    type: average 
+    sql: observed_value
+    
+    timestamp: observation_date
+    time_grains: [day, week, month]
+
+    dimensions:
+      - observation_type
+    
+    filters:
+      - field: observation_type
+        operator: '!='
+        value: "'randomized'"

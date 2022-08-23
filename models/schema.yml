@@ -7,3 +7,9 @@ models:
         tests:
           - unique 
           - not_null
+  - name: stg_sample_data
+    columns:
+      - name: sample_id
+        tests:
+          - unique 
+          - not_null
