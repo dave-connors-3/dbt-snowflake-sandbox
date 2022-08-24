@@ -1,3 +1,3 @@
 packages:
-  - package: dbt-labs/metrics
+  - package: dbt-labs/dbt-utils
     version: 0.3.1
