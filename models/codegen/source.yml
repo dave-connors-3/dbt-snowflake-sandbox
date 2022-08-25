@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sales_data
+    database: raw_tpch
+    schema: tpch_sf100
+    tables:
+      - name: orders
