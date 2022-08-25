@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: empty_model
+    tests:
+      - is_not_empty

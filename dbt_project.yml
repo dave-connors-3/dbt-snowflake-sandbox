@@ -15,6 +15,8 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+on-run-end: "{{ load_metadata_on_run_end(table='dbt_run_results', schema=target.schema, database = target.database, create_schema = true) }}" 
+
 models:
   dave_snowflake_sandbox:
     dbt_meta_testing:
@@ -24,3 +26,4 @@ models:
 seeds:
   dave_snowflake_sandbox:
     +database: analytics
+  
