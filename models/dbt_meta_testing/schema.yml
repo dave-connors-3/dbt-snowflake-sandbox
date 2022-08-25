@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: has_docs_and_tests
+  - name: missing_docs_and_tests
