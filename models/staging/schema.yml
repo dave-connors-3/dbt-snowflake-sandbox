@@ -1,0 +1,13 @@
+version: 2
+
+models: 
+  - name: stg_model
+    columns:
+      - name: varchar_100
+        tests:
+          - not_null
+          - assert_data_types:
+              data_type: varchar
+              precision: 100
+
+          
