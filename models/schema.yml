@@ -8,4 +8,4 @@ models:
           - unique 
           - not_null
           - accepted_values:
-              values: ['values']
+              values: [100]
