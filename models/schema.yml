@@ -2,6 +2,15 @@ version: 2
 
 models: 
   - name: sample_data
+    description: "you've heard of data, sure, but what about fake data?"
+    columns:
+      - name: id
+        tests:
+          - unique 
+          - not_null
+
+  - name: stg_sample_data
+    description: "you better believe it"
     columns:
       - name: id
         tests:
