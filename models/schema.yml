@@ -3,6 +3,12 @@ version: 2
 models: 
   - name: sample_data
     description: "you've heard of data, sure, but what about fake data?"
+    config:
+      tags:
+        - dave
+        - data
+    meta:
+      ham: sandwich
     columns:
       - name: id
         tests:
@@ -11,6 +17,12 @@ models:
 
   - name: stg_sample_data
     description: "you better believe it"
+    config:
+      tags:
+        - dave
+        - data
+    meta:    
+      eggs: benedict
     columns:
       - name: id
         tests:
