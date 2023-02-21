@@ -19,7 +19,7 @@ models:
     description: "you better believe it"
     config:
       tags:
-        - dave
+        - dbt
         - data
     meta:    
       eggs: benedict
