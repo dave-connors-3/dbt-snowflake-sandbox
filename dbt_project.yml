@@ -38,3 +38,7 @@ models:
 seeds:
   dave_snowflake_sandbox:
     +database: analytics
+
+vars:
+  prod_database: development
+  prod_schema: dbt_dconnors_prod

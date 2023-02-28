@@ -1,1 +1,3 @@
 dbt-snowflake
+-e ../../data-diff
+-e ../../sqeleton

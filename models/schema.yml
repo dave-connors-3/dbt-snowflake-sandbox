@@ -11,6 +11,8 @@ models:
       ham: sandwich
     columns:
       - name: id
+        tags: 
+          - primary-key
         tests:
           - unique 
           - not_null
