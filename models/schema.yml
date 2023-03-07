@@ -3,6 +3,8 @@ version: 2
 models: 
   - name: sample_data
     description: "you've heard of data, sure, but what about fake data?"
+    docs:
+      show: false
     config:
       tags:
         - dave

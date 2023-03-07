@@ -1,7 +1,7 @@
 {% macro generate_database_name(custom_database_name, node) -%}
 
     {%- set default_database = target.database -%}
-    {% if not custom_database_name and node.is_relational and not node.is_ephemeral %}
+    {% if not custom_database_name and node.is_relational and not node.is_ephemeral and node.resource_type != 'snapshot' %}
         {{ exceptions.raise_compiler_error(
             'Object must have a custom database configured:' ~ node.fqn
         )}}
@@ -18,3 +18,5 @@
     {%- endif -%}
 
 {%- endmacro %}
+
+
