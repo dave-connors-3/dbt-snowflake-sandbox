@@ -27,6 +27,8 @@ models:
       eggs: benedict
     columns:
       - name: id
+        tags: 
+          - primary-key
         tests:
           - unique 
           - not_null
