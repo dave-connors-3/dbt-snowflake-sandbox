@@ -1,32 +1,26 @@
 version: 2
 
-models: 
-  - name: sample_data
-    description: "you've heard of data, sure, but what about fake data?"
-    docs:
-      show: false
-    config:
-      tags:
-        - dave
-        - data
-    meta:
-      ham: sandwich
-    columns:
-      - name: id
-        tests:
-          - unique 
-          - not_null
 
-  - name: stg_sample_data
-    description: "you better believe it"
+models:
+  - name: my_model
     config:
-      tags:
-        - dbt
-        - data
-    meta:    
-      eggs: benedict
+      # declare the model contracted
+      contract: true
     columns:
       - name: id
+        quote: true
+        # must declare data_type
+        data_type: integer
+        description: hello
+        # supply constraints on column id
+        constraints: ['not null','primary key']
+        # supply additional checks on column id
+        constraints_check: (id > 0)
         tests:
-          - unique 
-          - not_null
+          - unique
+      - name: color
+        data_type: text
+      - name: date_day
+        data_type: date
+
+        

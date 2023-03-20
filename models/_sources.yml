@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: test_source
+    database: raw
+    schema: data
+    tables:
+      - name: bogus

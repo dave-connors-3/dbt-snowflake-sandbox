@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: new_exposure
+    type: dashboard
+    depends_on:
+      - "ref('stg_sample_data')"
+    owner:
+      email: dave@dbtlabs.com
+
+  - name: new_exposure_2
+    type: dashboard
+    depends_on:
+      - "ref('sample_datar')"
+    owner:
+      email: dave@dbtlabs.com

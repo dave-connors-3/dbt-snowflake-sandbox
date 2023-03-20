@@ -1,4 +1,4 @@
-{% snapshot snapshot_name %}
+{% snapshot seed_snapshot %}
     {{
         config(
             unique_key='id',
