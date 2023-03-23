@@ -1,10 +1,8 @@
 version: 2
+
 metrics:
   - name: config_metric
     label: Example Metric with Config
-    model: ref(‘sample_datar’)
+    model: ref("sample_datar")
     calculation_method: count
-    timestamp: date_field
-    time_grains: [day, week, month]
-    config:
-      enabled: true
+    expression: id
