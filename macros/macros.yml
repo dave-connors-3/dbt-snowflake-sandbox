@@ -1,0 +1,7 @@
+macros:
+  - name: get_money
+    arguments:
+      - name: dollars
+        description: the number of dollars and cents
+      - name: cents
+        description: the number of dollars and cents
