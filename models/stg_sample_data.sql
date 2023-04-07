@@ -1,3 +1,3 @@
-select * from {{ ref('sample_datar') }}
+select * from {{ ref('sample_data') }}
 
 where id = 1

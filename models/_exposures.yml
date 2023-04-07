@@ -1,3 +1,5 @@
+
+
 version: 2
 
 exposures:
@@ -11,6 +13,6 @@ exposures:
   - name: new_exposure_2
     type: dashboard
     depends_on:
-      - "ref('sample_datar')"
+      - "ref('sample_data')"
     owner:
       email: dave@dbtlabs.com

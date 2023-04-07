@@ -1,4 +1,8 @@
-
+{{
+    config(
+        materialized='table'
+    )
+}}
 
 select 'gravy' as topping_name
 

@@ -3,6 +3,6 @@ version: 2
 metrics:
   - name: config_metric
     label: Example Metric with Config
-    model: ref("sample_datar")
+    model: ref("sample_data")
     calculation_method: count
     expression: id
