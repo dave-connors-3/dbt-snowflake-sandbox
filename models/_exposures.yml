@@ -16,3 +16,6 @@ exposures:
       - "ref('sample_data')"
     owner:
       email: dave@dbtlabs.com
+    
+    config:
+      enabled: false

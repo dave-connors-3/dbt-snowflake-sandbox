@@ -1,6 +1,7 @@
 {{
     config(
-        materialized='table'
+        materialized='table',
+        pre_hook="select 1 as col"
     )
 }}
 
