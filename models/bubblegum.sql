@@ -15,3 +15,7 @@ union all
 
 select 'whipped_cream' as topping_name
 
+union all 
+
+select 'bacon bits' as topping_name
+
