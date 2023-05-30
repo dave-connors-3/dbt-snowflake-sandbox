@@ -38,3 +38,6 @@ models:
 seeds:
   dave_snowflake_sandbox:
     +database: analytics
+
+vars:
+  person: dracula
