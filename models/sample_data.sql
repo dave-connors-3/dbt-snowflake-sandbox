@@ -2,20 +2,23 @@ with data as (
 
     select 
         1 as id,
-        'dave' as person
+        'dave' as person,
+        '{{ var('another_person') }}' as another_person
 
     union all
 
     select 
         2 as id,
-        'nate' as person
+        'nate' as person,
+        '{{ var('another_person') }}' as another_person
 
     
     union all
 
     select 
         3 as id,
-        '{{ var('person') }}' as person
+        '{{ var('person') }}' as person,
+        '{{ var('another_person') }}' as another_person
 
 )
 

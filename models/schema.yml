@@ -2,6 +2,8 @@ version: 2
 
 models: 
   - name: sample_data
+    config:
+      materialized: table
     columns:
       - name: id
         tests:

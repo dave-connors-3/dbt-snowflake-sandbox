@@ -40,4 +40,5 @@ seeds:
     +database: analytics
 
 vars:
-  person: dracula
+  person: jafar
+  another_person: dracula
