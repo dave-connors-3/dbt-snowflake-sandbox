@@ -22,7 +22,10 @@ with data as (
 
 )
 
-select * from data
+select 
+*
+
+from data
 
 
 -- {{ target.name in ['dev', 'default', 'ci'] }}

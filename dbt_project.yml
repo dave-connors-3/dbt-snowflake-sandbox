@@ -42,3 +42,4 @@ seeds:
 vars:
   person: jafar
   another_person: dracula
+  third_person: bowser
