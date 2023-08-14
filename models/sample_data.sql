@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='ephemeral'
+    )
+}}
+
 with data as (
 
     select 1 as id
